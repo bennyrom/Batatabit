@@ -213,6 +213,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
 }
+/*Icono de direccion derecha*/
 .currency-table--container .right-button span{
     position: relative;
     display: block;
@@ -241,3 +242,138 @@ main {
     font-weight: 300;
     color: var(--warm-black);
 }
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+/*
+Logotipo de la papa -> cuando colocamos un position absolute
+va a buscar al primer contenedor padre con un position relative
+y va a partir de ahi, por eso arriba colocamos un relative
+*/
+.product-detail--batata-logo {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: -10px;
+    left: calc(50% - 20px);
+    background-image: url('./assets/icons/batata.svg');
+}
+/*
+Usando calc tambien en top
+
+.product-detail__batata-logo {
+	position: absolute;
+	top: calc(0% - 12.5px);
+	left: calc(50% - 20px);
+}
+*/
+.main-product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.main-product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.main-product-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+/*
+Calc:
+
+left(atributo): Alinea un elemento con referencia al lado izquierdo
+de nuestro contenedor.
+
+calc()(función): Nos permite realizar cálculos para determinar
+valores de propiedades CSS.
+
+50%(parámetro): Representa la mitad del ancho del
+contenedor(para 320px, el 50% serían = 160px), lo cual alineará
+nuestro elemento 160px de izquierda(left) a derecha.
+
+20px: Representan la mitad del ancho(width) de nuestro elemento,
+esto se hace con la finalidad de poder posicionarlo en el centro
+de nuestro contenedor.
+*/
+.product-detail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #2b2623;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product-detail--card .clock {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/clock.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product-detail--card .eye {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/eye.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product-detail--card .dollar {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/dollar-sign.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product-detail--card .check {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/check-circle.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-detail--card .product--card-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.product-detail--card .product--card-body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
