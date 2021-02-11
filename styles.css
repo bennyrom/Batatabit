@@ -98,7 +98,11 @@ header img {
     width: 13px;
     height: 8px;
     margin-left: 10px;
+    background-image: url('http://drive.google.com/uc?export=view&id=1Hkg_PrGu6R4Kn8WVyrocLQ0XDgyQsVc2');
+    /*
+    Reemplazo de asset local por drive
     background-image: url('./assets/icons/down-arrow.svg');
+    */
 }
 /*HEADER*/
 
@@ -124,7 +128,11 @@ main {
     left: 25px;
     width: 14px;
     height: 14px;
+    background-image: url("http://drive.google.com/uc?export=view&id=1Y77qaaVfaNGazbIYjZeZIEZQguawk9R9");
+    /*
+    Reemplazo de asset local por drive
     background-image: url("./assets/icons/izquierda.svg");
+    */
     background-repeat: no-repeat;
 }
 /*Icono de next izquierda*/
@@ -134,7 +142,11 @@ main {
     right: 23px;
     width: 10px;
     height: 10px;
+    background-image: url("http://drive.google.com/uc?export=view&id=1SbXB-dxiJVYGSS6lpyVTECq5QHiZp9Ad");
+    /*
+    Reemplazo de asset local por drive
     background-image: url("./assets/icons/derecha.svg");
+    */
     background-repeat: no-repeat;
 }
 
@@ -151,7 +163,11 @@ main {
     height: 200px;
     margin: 0 auto;
     margin-bottom: 50px;
+    background-image: url('http://drive.google.com/uc?export=view&id=1u5MnCFPs0_K6m3QnWFFUUeyT1geqIi7k');
+    /*
+    Reemplazo de asset local por drive
     background-image: url('./assets/img/Bitcoin.svg');
+    */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -260,7 +276,11 @@ main {
     width: 15px;
     height: 15px;
     margin-left: 10px;
+    background-image: url('http://drive.google.com/uc?export=view&id=19K9f6rofmUVE3uJ_QuLSQ2Of7my-4nvi');
+    /*
+    Reemplazo de asset local por drive
     background-image: url('./assets/icons/trending-down.svg');
+    */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -271,7 +291,11 @@ main {
     width: 15px;
     height: 15px;
     margin-left: 10px;
+    background-image: url('http://drive.google.com/uc?export=view&id=1FM2HqTKLxSTAXadqJNcHXeefBEMceMko');
+    /*
+    Reemplazo de asset local por drive
     background-image: url('./assets/icons/trending-up.svg');
+    */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -342,7 +366,11 @@ y va a partir de ahi, por eso arriba colocamos un relative
     height: 25px;
     top: -10px;
     left: calc(50% - 20px);
+    background-image: url('http://drive.google.com/uc?export=view&id=1I1dyLBRIjUdEe62VfJHWI2kisNXB1aZx');
+    /*
+    Reemplazo de asset local por drive
     background-image: url('./assets/icons/batata.svg');
+    */
 }
 /*Titulo "Creamos un producto sin comparacion"*/
 .main-product-detail--title {
@@ -405,7 +433,11 @@ de nuestro contenedor.
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
+    background-image: url('http://drive.google.com/uc?export=view&id=1u0IBzi-gyLX5uMHWNZm3AlNiIrImTJr-');
+    /*
+    Reemplazo de asset local por drive
     background-image: url('./assets/icons/clock.svg');
+    */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -416,7 +448,11 @@ de nuestro contenedor.
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
+    background-image: url('http://drive.google.com/uc?export=view&id=1yM0sRy9UwJtQQBQXUM6GxSK6y9ze9-xY');
+    /*
+    Reemplazo de asset local por drive
     background-image: url('./assets/icons/eye.svg');
+    */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -427,7 +463,11 @@ de nuestro contenedor.
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
+    background-image: url('http://drive.google.com/uc?export=view&id=1kmLtlO5jB9rBJOiPbkzPWgzhQ3c0LQRe');
+    /*
+    Reempazo de asset local por drive
     background-image: url('./assets/icons/dollar-sign.svg');
+    */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -438,7 +478,11 @@ de nuestro contenedor.
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
+    background-image: url('http://drive.google.com/uc?export=view&id=1fM9j5C9OCHWb9Nbz6yWmTn3Gj4bJPj5N');
+    /*
+    Reemplazo de asset local por drive
     background-image: url('./assets/icons/check-circle.svg');
+    */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -466,7 +510,11 @@ de nuestro contenedor.
     width: 100%;
     min-width: 320px;
     height: 50vh;
+    background-image: url('http://drive.google.com/uc?export=view&id=1aGXWrbFAZoxK7dFWJbu9Cf97FA1cfg3T');
+    /*
+    Reemplazo de asset local por drive
     background-image: url('./assets/img/bitcoinbaby2x.jpg');
+    */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -500,7 +548,11 @@ de nuestro contenedor.
     right: 8px;
     width: 10px;
     height: 10px;
+    background-image: url("http://drive.google.com/uc?export=view&id=1SbXB-dxiJVYGSS6lpyVTECq5QHiZp9Ad");
+    /*
+    Reemplazo de asset local por drive
     background-image: url("./assets/icons/derecha.svg");
+    */
     background-repeat: no-repeat;
 }
 /*Icono de next derecha*/
@@ -510,7 +562,11 @@ de nuestro contenedor.
     left: 8px;
     width: 14px;
     height: 14px;
+    background-image: url("http://drive.google.com/uc?export=view&id=1Y77qaaVfaNGazbIYjZeZIEZQguawk9R9");
+    /*
+    Reemplazo de asset local por drive
     background-image: url("./assets/icons/izquierda.svg");
+    */
     background-repeat: no-repeat;
 }
 /*Estilos de la seccion de planes*/
@@ -661,7 +717,11 @@ de nuestro contenedor.
     display: inline-block;
     width: 20px;
     height: 20px;
+    background-image: url('http://drive.google.com/uc?export=view&id=1f3bgCsuzzlN_4Vx-rzeHZKRWIQ5IjPpW');
+    /*
+    Reemplazo de asset local por drive
     background-image: url('./assets/icons/orange-right-arrow.svg');
+    */
     vertical-align: text-bottom;
 }
 .plan-cad--call span {
@@ -669,7 +729,11 @@ de nuestro contenedor.
     width: 20px;
     height: 20px;
     top: 50%;
+    background-image: url('http://drive.google.com/uc?export=view&id=1f3bgCsuzzlN_4Vx-rzeHZKRWIQ5IjPpW');
+    /*
+    Reemplazo de asset local por drive
     background-image: url('./assets/icons/orange-right-arrow.svg');
+    */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
