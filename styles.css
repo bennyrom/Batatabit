@@ -470,6 +470,8 @@ de nuestro contenedor.
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    /*Linea que permite efecto parallax*/
+    background-attachment: fixed;
     text-align: center;
 }
 /*h2 de la seccion*/
@@ -556,7 +558,7 @@ de nuestro contenedor.
     scroll-snap-align: center;
     /*Complemento para scroll dentro de cards*/
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
     /*
@@ -564,7 +566,7 @@ de nuestro contenedor.
     suplantamos ese auto por 30px para que las cards
     se separen
     */
-    margin: 50px 20px 0;
+    margin: 50px 5px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -674,8 +676,36 @@ de nuestro contenedor.
     color: var(--bitcoin-orange);
 }
 /*Seccion de planes final-----------------------------------*/
-
-
-
-
 /*MAIN*/
+
+
+/*FOOTER*/
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li {
+    margin: 10px 0;
+}
+.left a {
+    text-decoration: none;
+    color: var(--just-white);
+}
+footer .right img {
+    width: 100px;
+    height: 100px;
+}
