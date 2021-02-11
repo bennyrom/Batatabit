@@ -597,7 +597,7 @@ de nuestro contenedor.
 /*Slider de cards con CSS*/
 .plans-container--slider {
     display: flex; /*Las alinea en fila*/
-    height: 316px;
+    height: 400px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
