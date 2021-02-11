@@ -1,10 +1,4 @@
-/*
-1. Posicionamiento
-2. Modelo de caja
-3. Tipografia
-4. Visuales
-5. Otros
-*/
+/*SECCIONES ROOT---------------------------------------------*/
 :root {
     /*Colores*/
     --bitcoin-orange: #f7931a;
@@ -25,7 +19,14 @@
 html {
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
+    /*Hacer que el scroll sea suave al usar el boton planes*/
+    scroll-behavior: smooth;
 }
+/*SECCIONES ROOT----------------------------------------------*/
+
+
+
+/*HEADER*/
 header {
     position: relative;
     /*Aplicando flex-box*/
@@ -99,24 +100,52 @@ header img {
     margin-left: 10px;
     background-image: url('./assets/icons/down-arrow.svg');
 }
+/*HEADER*/
+
+
+/*MAIN*/
 main {
     width: 100%;
     height: auto;
     background-color: var(--off-white);
 }
 .main--exchange-container {
+    position: relative;
     width: 100%;
     height: auto;
     padding-top: 80px;
     padding-bottom: 30px;
     text-align: center;
 }
+/*Icono de next derecha*/
+.main--exchange-container .small--left--arrow {
+    position: absolute;
+    top: 71%;
+    left: 25px;
+    width: 14px;
+    height: 14px;
+    background-image: url("./assets/icons/izquierda.svg");
+    background-repeat: no-repeat;
+}
+/*Icono de next izquierda*/
+.main--exchange-container .small--right--arrow {
+    position: absolute;
+    top: 71%;
+    right: 23px;
+    width: 10px;
+    height: 10px;
+    background-image: url("./assets/icons/derecha.svg");
+    background-repeat: no-repeat;
+}
+
+/*Seccion desde imagen de bitcoin hasta fin de tablas-------*/
 .main--exchange-container-title {
     width: 90%;
     min-width: 288px;
     max-width: 900px;
     margin: 0 auto;
 }
+/*Imagen de bitcoin con particulas*/
 .main--exchange-container .backgroundImg {
     width: 200px;
     height: 200px;
@@ -127,6 +156,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
 }
+/*Titulo "Visibilizamos todas..."*/
 .main--exchange-container h2 {
     margin-bottom: 30px;
     font-size: 2.4rem;
@@ -134,6 +164,7 @@ main {
     line-height: 2.6rem;
     color: var(--black);
 }
+/*Parrafo "Traemos informacion en tiempo..."*/
 .main--exchange-container p {
     margin-bottom: 30px;
     font-size: 1.4rem;
@@ -141,6 +172,10 @@ main {
     line-height: 1.6rem;
     color: #757575;
 }
+/*Seccion desde imagen de bitcoin hasta fin de tablas--------*/
+
+/*Seccion de tablas inicio-----------------------------------*/
+/*Estilos generales de las tablas*/
 .main-currency-table {
     width: 70%;
     min-width: 235px;
@@ -148,7 +183,12 @@ main {
     height: 360px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
+    margin: 0 50px;
 }
+.main-currency-table .table2 {
+    margin-left: 50px;
+}
+/*Titulo de tabla 1*/
 .main-currency-table .currency-table--title {
     margin-bottom: 15px;
     font-size: 1.8rem;
@@ -156,17 +196,36 @@ main {
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
 }
+/*Titulo de tabla 2*/
+.main-currency-table .currency-table--title2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-blue);
+}
+/*Contenido de la tabla en general*/
 .currency-table--container {
     width: 90%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
     margin: 0 auto;
+    /*Complemento para scroll dentro de cards*/
+    scroll-snap-align: center;
+    /*Complemento para scroll dentro de cards*/
 }
+/*Alineando texto de izquierdo de la tabla*/
+.currency-table--container .izquierda {
+    text-align: left;
+    padding-left: 10px;
+}
+/*Dimensiones de la tabla*/
 .currency-table--container table {
     width: 100%;
     height: 100%;
 }
+/*Estilos de los td (contenido) de la tabla*/
 .currency-table--container td {
     width: 50%;
     font-size: 1.6rem;
@@ -175,6 +234,7 @@ main {
     color: var(--grey);
     background-color: var(--just-white);
 }
+/*Bordes curvos de la tabla*/
 .currency-table--container .table__top-left {
     border-radius: 15px 0 0 0;
 }
@@ -187,12 +247,14 @@ main {
 .currency-table--container .table__bottom-right {
     border-radius: 0 0 15px 0;
 }
+/*Correccion de estilos de la fuente izquierda*/
 .currency-table--container .table__right {
     font-size: 1.4rem;
     font-weight: normal;
     line-height: 1.7rem;
     color: #757575;
 }
+/*Iconos de tendencias bajas*/
 .currency-table--container .down {
     display: inline-block;
     width: 15px;
@@ -203,6 +265,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
 }
+/*Iconos de tendencias altas*/
 .currency-table--container .up {
     display: inline-block;
     width: 15px;
@@ -213,20 +276,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
 }
-/*Icono de direccion derecha*/
-.currency-table--container .right-button span{
-    position: relative;
-    display: block;
-    top: 980px;
-    left: 290px;
-    width: 15px;
-    height: 15px;
-    background-image: url('./assets/icons/right-arrow.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-}
+/*Fecha de la tabla 1*/
 .currency-table--date {
     width: 190px;
     height: 30px;
@@ -236,12 +286,43 @@ main {
     background-color: var(--soft-orange);
     border-radius: 8px;
 }
+/*Fecha de la tabla 2*/
+.currency-table--date2 {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+}
+/*Parrados de la fecha de la tabla 1*/
 .currency-table--date p {
     font-size: 1.2rem;
     line-height: 1.5rem;
     font-weight: 300;
     color: var(--warm-black);
 }
+/*Parrados de la fecha de la tabla 2*/
+.currency-table--date2 p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: var(--warm-black);
+}
+/*Creacion de carousel de tablas*/
+.main-tables-container {
+    margin-top: 50px;
+    display: flex; /*Las alinea en fila*/
+    height: 400px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+/*Seccion de tablas final------------------------------------*/
+
+/*Seccion de cards inicio-------------------------------------*/
+/*Estilos de seccion completa de cards*/
 .main-product-detail {
     position: relative;
     width: 100%;
@@ -263,15 +344,7 @@ y va a partir de ahi, por eso arriba colocamos un relative
     left: calc(50% - 20px);
     background-image: url('./assets/icons/batata.svg');
 }
-/*
-Usando calc tambien en top
-
-.product-detail__batata-logo {
-	position: absolute;
-	top: calc(0% - 12.5px);
-	left: calc(50% - 20px);
-}
-*/
+/*Titulo "Creamos un producto sin comparacion"*/
 .main-product-detail--title {
     width: 90%;
     min-width: 288px;
@@ -280,6 +353,7 @@ Usando calc tambien en top
     margin-top: 50px;
     text-align: center;
 }
+/*Titulo "Creamos un producto sin comparacion" h2*/
 .main-product-detail--title h2 {
     margin-bottom: 20px;
     font-size: 2.4rem;
@@ -287,6 +361,7 @@ Usando calc tambien en top
     line-height: 2.6rem;
     color: var(--just-white);
 }
+/*Titulo "Creamos un producto sin comparacion" p*/
 .main-product-detail--title p {
     margin-bottom: 20px;
     font-size: 1.4rem;
@@ -311,17 +386,20 @@ nuestro elemento 160px de izquierda(left) a derecha.
 esto se hace con la finalidad de poder posicionarlo en el centro
 de nuestro contenedor.
 */
+
+/*Estilos generales de las cards*/
 .product-detail--card {
     width: 90%;
     min-width: 288px;
     max-width: 400px;
-    height: 150px;
+    min-height: 150px;
     margin: 15px auto;
     padding: 15px;
     background-color: #2b2623;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
+/*Icono de clock en card*/
 .product-detail--card .clock {
     display: inline-block;
     width: 20px;
@@ -332,6 +410,7 @@ de nuestro contenedor.
     background-position: center;
     background-repeat: no-repeat;
 }
+/*Icono de eye en card*/
 .product-detail--card .eye {
     display: inline-block;
     width: 20px;
@@ -342,6 +421,7 @@ de nuestro contenedor.
     background-position: center;
     background-repeat: no-repeat;
 }
+/*Icono de dollar en card*/
 .product-detail--card .dollar {
     display: inline-block;
     width: 20px;
@@ -352,6 +432,7 @@ de nuestro contenedor.
     background-position: center;
     background-repeat: no-repeat;
 }
+/*Icono de check en card*/
 .product-detail--card .check {
     display: inline-block;
     width: 20px;
@@ -362,7 +443,7 @@ de nuestro contenedor.
     background-position: center;
     background-repeat: no-repeat;
 }
-
+/*Titulos de cards*/
 .product-detail--card .product--card-title {
     margin-bottom: 15px;
     font-size: 1.8rem;
@@ -370,10 +451,231 @@ de nuestro contenedor.
     line-height: 1.8rem;
     color: var(--just-white);
 }
+/*Cuerpo de cards*/
 .product-detail--card .product--card-body {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
     color: #808080;
 }
+/*Seccion de cards final-------------------------------------*/
 
+/*Seccion de imagen de modelo con bitcoin inicio-------------*/
+/*Imagen de fondo*/
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('./assets/img/bitcoinbaby2x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+/*h2 de la seccion*/
+.bitcoin-img-container h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+/*Seccion de imagen de modelo con bitcoin final-------------*/
+
+/*Seccion de planes inicio----------------------------------*/
+/*Estilos de toda la seccion de planes*/
+.main-plans-container {
+    position: relative;
+    width: 100%;
+    min-width: 230px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+/*Icono de next izquierda*/
+.plans-container--slider .small--right--arrow {
+    position: absolute;
+    top: 60%;
+    right: 8px;
+    width: 10px;
+    height: 10px;
+    background-image: url("./assets/icons/derecha.svg");
+    background-repeat: no-repeat;
+}
+/*Icono de next derecha*/
+.plans-container--slider .small--left--arrow {
+    position: absolute;
+    top: 60%;
+    left: 8px;
+    width: 14px;
+    height: 14px;
+    background-image: url("./assets/icons/izquierda.svg");
+    background-repeat: no-repeat;
+}
+/*Estilos de la seccion de planes*/
+.main-plans-container .plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+/*Titulo de la seccion de planes*/
+.main-plans-container .plans--title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+/*Descripcion de la seccion de planes*/
+.main-plans-container .plans--title p {
+    position: relative;
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+/*Slider de cards con CSS*/
+.plans-container--slider {
+    display: flex; /*Las alinea en fila*/
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+/*Estilos generales de las tarjetas*/
+.plans-container--card {
+    /*
+    Usaremos position:relative para que el p de abajo
+    lo tome como referencia para posicionarse y a ese le
+    demos un position: absolute
+    */
+    position: relative;
+    /*Complemento para scroll dentro de cards*/
+    scroll-snap-align: center;
+    /*Complemento para scroll dentro de cards*/
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    /*
+    margin: 50px auto 0;
+    suplantamos ese auto por 30px para que las cards
+    se separen
+    */
+    margin: 50px 20px 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+/*Titulo de tarjeta recommended*/
+.recommended {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    top: -15px;
+    left: calc(50% - 60px);
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+    font-size: 1.2rem;
+    padding: 6px;
+}
+/*Titulo de tarjeta basic*/
+.basic {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    top: -15px;
+    left: calc(50% - 60px);
+    background-color: var(--secondary-blue);
+    border-radius: 8px;
+    color: var(--just-white);
+    font-size: 1.2rem;
+    padding: 6px;
+}
+/*Titulo de tarjeta vip*/
+.vip {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    top: -15px;
+    left: calc(50% - 60px);
+    background-color: #B054F7;
+    border-radius: 8px;
+    color: var(--just-white);
+    font-size: 1.2rem;
+    padding: 6px;
+}
+/*Titulo de las tarjetas*/
+.plan-card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+/*Precio de las tarjetas*/
+.plan-card--price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--black);
+}
+/*Simbolo de pesos de las tarjetas*/
+.plan-card--price span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    /*
+    Para poner el simbolo de pesos en la parte
+    de arriba usamos la siguiente linea de codigo
+    */
+    vertical-align: text-top;
+}
+/*Descricion del ahorro de cada plan*/
+.plan-card--saving {
+    font-size: 1.2rem;
+    color: #757575;
+}
+/*Boton de "Escoger este"*/
+.plan-cad--call {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    font-family: "DM Sans", sans-serif;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+/*Logo del boton de "Escoger este"*/
+.plan-cad--call span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/icons/orange-right-arrow.svg');
+    vertical-align: text-bottom;
+}
+.plan-cad--call span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    background-image: url('./assets/icons/orange-right-arrow.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--bitcoin-orange);
+}
+/*Seccion de planes final-----------------------------------*/
+
+
+
+
+/*MAIN*/
